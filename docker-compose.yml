@@ -1,11 +1,8 @@
-version: '3'
-
 services:
   mdbtools-rest:
     build: .
     ports:
-      - "5000:5000"
+      - "3000:5000"
     volumes:
-      - ./data:/app/data
-    environment:
-      - DATABASE_PATH=/app/data/database.mdb
+      - ./test:/app/data
+
